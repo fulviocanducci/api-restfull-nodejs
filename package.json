@@ -1,0 +1,9 @@
+{
+  "name": "api-node",
+  "version": "1.0.0",
+  "description": "API RestFull NodeJs",
+  "main": "src/index.js",
+  "repository": "https://github.com/fulviocanducci/api-restfull-nodejs.git",
+  "author": "Fulvio Cezar Canducci Dias",
+  "license": "MIT"
+}
