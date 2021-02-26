@@ -32,4 +32,16 @@ module.exports = {
       throw error;
     }
   },
+  del: async (req, res) => {
+    try {
+      const id = req.params.id;
+      const result = await people.findByPk(id);
+      if (result) {
+        res.json({ status: !!(await result.destroy()) });
+      }
+      res.json({ status: false });
+    } catch (error) {
+      throw error;
+    }
+  },
 };
